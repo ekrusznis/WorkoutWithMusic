@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dpro.widgets.WeekdaysPicker
+            android:id="@+id/weekdays"
+            app:show_weekend="true"
+            app:recurrence="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sunday_first_day="true" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+
+<ScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <FrameLayout
+            android:isScrollContainer="true"
+            android:id="@+id/workoutDayContainer"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+</ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
