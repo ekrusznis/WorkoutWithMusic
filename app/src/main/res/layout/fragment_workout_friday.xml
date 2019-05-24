@@ -27,14 +27,24 @@
             android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="3dp"/>
-    <TextView
-        android:text="Jump Rope - 15 minutes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:text="Jump Rope - 15 minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-
-
+            <ImageButton
+                android:background="@drawable/visibility"
+                android:id="@+id/jumpRopeButton"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
 
 
     </LinearLayout>
