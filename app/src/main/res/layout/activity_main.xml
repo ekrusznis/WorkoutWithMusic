@@ -16,6 +16,11 @@
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:fillViewport="true">
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
@@ -23,6 +28,7 @@
             android:layout_height="wrap_content"
             app:tabMode="fixed"
             app:tabGravity="fill"/>
+        </ScrollView>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager

@@ -18,7 +18,6 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".Webview"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Webview"/>
 
         <service android:name=".playback.MusicService" />
     </application>

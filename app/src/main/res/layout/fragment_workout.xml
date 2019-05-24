@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <com.dpro.widgets.WeekdaysPicker
             android:id="@+id/weekdays"
@@ -24,10 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="3dp"/>
 
-<ScrollView
-    android:fillViewport="true"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
         <FrameLayout
             android:isScrollContainer="true"
             android:id="@+id/workoutDayContainer"
@@ -36,7 +32,6 @@
             android:layout_height="wrap_content">
         </FrameLayout>
 
-</ScrollView>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
